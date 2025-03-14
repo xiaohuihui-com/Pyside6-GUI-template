@@ -1,15 +1,10 @@
 # -*- coding: utf-8 -*-
-# Name:         view_main.py
-# Author:       小菜
-# Date:         2024/4/01 00:00
-# Description:
-
-
 from PySide6.QtCore import (QObject, Qt)
 
 from views import (MainWindow, LoginWindow)
 from ui.ui_components import (create_animation_group, create_opacity_animation)
 from resources import resources_rc
+
 
 class ViewMain(QObject):
     login_window: LoginWindow

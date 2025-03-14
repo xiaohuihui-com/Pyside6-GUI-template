@@ -27,7 +27,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1162, 741)
+        MainWindow.resize(1162, 755)
         MainWindow.setMinimumSize(QSize(940, 560))
         self.styleSheet = QWidget(MainWindow)
         self.styleSheet.setObjectName(u"styleSheet")
@@ -1195,7 +1195,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 274, 218))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 218, 218))
         self.scrollAreaWidgetContents.setStyleSheet(u" QScrollBar:vertical {\n"
 "	border: none;\n"
 "    background: rgb(52, 59, 72);\n"
@@ -1514,6 +1514,16 @@ class Ui_MainWindow(object):
         self.version.setAlignment(Qt.AlignmentFlag.AlignRight|Qt.AlignmentFlag.AlignTrailing|Qt.AlignmentFlag.AlignVCenter)
 
         self.horizontalLayout_5.addWidget(self.version)
+
+        self.frame_size_grip = QFrame(self.bottomBar)
+        self.frame_size_grip.setObjectName(u"frame_size_grip")
+        self.frame_size_grip.setMinimumSize(QSize(20, 0))
+        self.frame_size_grip.setMaximumSize(QSize(20, 16777215))
+        self.frame_size_grip.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
+        self.frame_size_grip.setFrameShape(QFrame.Shape.NoFrame)
+        self.frame_size_grip.setFrameShadow(QFrame.Shadow.Raised)
+
+        self.horizontalLayout_5.addWidget(self.frame_size_grip)
 
 
         self.verticalLayout_6.addWidget(self.bottomBar)
