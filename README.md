@@ -1,6 +1,11 @@
 # Pyside6_GUI_Template
 
 ---
+## 模板介绍
+- 模板基于PySide6框架，实现了MVC架构，并使用PyQtDesigner设计了用户界面。
+- 模板提供了一种快速开发GUI应用的方式，并支持多种主题切换。
+- 模板提供了多种主题切换功能，包括浅色和深色两种模式。
+
 ## 模板目录结构
 ```shell
 Pyside6-template
@@ -33,4 +38,27 @@ Pyside6-template
 ├── README.md
 ├── app.py
 └── requirements.txt
+```
+
+## 项目部署
+
+1. 拉取项目模板代码：
+```shell
+git clone https://kkgithub.com/xiaohuihui-com/Pyside6-GUI-template.git
+```
+2. 安装依赖：
+```shell
+cd Pyside6-GUI-template
+pip install -r requirements.txt
+```
+3. 运行项目：
+```shell
+python app.py
+```
+4. 打包项目：
+```shell
+# linux
+sh nuitka_linux_standalone.sh
+# windows
+sh nuitka_windows_standalone.sh
 ```
