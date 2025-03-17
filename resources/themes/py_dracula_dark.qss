@@ -1,7 +1,7 @@
 /* 设置所有QWidget的默认文本颜色和字体 */
 QWidget{
 	color: rgb(221, 221, 221); /* 文本颜色为浅灰色 */
-	font: 10pt "Segoe UI"; /* 字体为“Segoe UI”，字号为10点 */
+	font: 12pt "Microsoft YaHei UI Segoe UI"; /* 字体为“Segoe UI”，字号为10点 */
 }
 
 /* 设置工具提示的样式 */
@@ -61,7 +61,7 @@ QToolTip {
 	background-position: left center; /* 背景图片左居中 */
     background-repeat: no-repeat; /* 图片不重复 */
 	border: none; /* 去掉边框 */
-	border-left: 20px solid transparent; /* 左侧透明边框 */
+	border-left: 22px solid transparent; /* 左侧透明边框 */
 	background-color:transparent; /* 背景透明 */
 	text-align: left; /* 文本左对齐 */
 	padding-left: 44px; /* 内左边距为44像素 */

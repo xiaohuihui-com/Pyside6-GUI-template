@@ -19,7 +19,7 @@ DARK THEME - DRACULA COLOR BASED
 
 QWidget{
 	color: #333;
-	font: 10pt "Microsoft YaHei UI Segoe UI";
+	font: 12pt "Microsoft YaHei UI Segoe UI";
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////
