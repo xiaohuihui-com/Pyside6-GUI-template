@@ -3,7 +3,6 @@ import sys
 from PySide6.QtWidgets import QApplication
 
 from controllers import ControllerMain
-from resources import resources_rc
 
 if __name__ == '__main__':
     app = QApplication()
