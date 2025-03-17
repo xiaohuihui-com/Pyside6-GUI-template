@@ -117,10 +117,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.titleRightInfo.setText(description)
 
     def initialize_window_resizing(self):
-        pass
         """可调整窗口尺寸"""
-        # self.sizegrip = QSizeGrip(self.frame_size_grip)
-        # self.sizegrip.setStyleSheet("width: 20px; height: 20px; margin 0px; padding: 0px;")
+        self.sizegrip = QSizeGrip(self.frame_size_grip)
+        self.sizegrip.setStyleSheet("width: 20px; height: 20px; margin 0px; padding: 0px;")
 
     def initialize_border_effects(self):
         """初始化自定义边框并为窗口应用阴影效果。"""

@@ -1,9 +1,34 @@
-/* 设置所有QWidget的默认文本颜色和字体 */
-QWidget{
-	color: rgb(221, 221, 221); /* 文本颜色为浅灰色 */
-	font: 10pt "Segoe UI"; /* 字体为“Segoe UI”，字号为10点 */
-}
 
+# QSS介绍
+
+---
+QSS（Qt Style Sheet）是一种用于定义Qt应用程序外观的样式表语言。
+
+# 组件
+
+---
+- 全局
+  - 设置所有QWidget的默认文本颜色和字体
+  - 设置工具提示的样式
+  - 设置应用背景的样式
+- 左侧
+  - 设置左侧菜单背景的样式
+  - 设置顶部logo的样式
+  - 设置左侧标题的样式
+  - 设置左侧描述的样式
+  - 设置左侧菜单框架的样式
+- 顶部
+  - 设置顶部菜单按钮的样式
+  - 设置顶部菜单按钮悬停状态的样式
+  - 设置顶部菜单按钮按压状态的样式
+- 底部
+  - 设置底部菜单按钮的样式
+  - 设置底部菜单按钮悬停状态的样式
+  - 设置底部菜单按钮按压状态的样式
+
+
+- 工具提示
+```qt style sheet
 /* 设置工具提示的样式 */
 QToolTip {
 	color: #ffffff; /* 文本颜色为白色 */
@@ -14,191 +39,9 @@ QToolTip {
 	padding-left: 8px; /* 内左边距为8像素 */
 	margin: 0px; /* 外边距为0 */
 }
-
-/* 设置应用背景的样式 */
-#bgApp {
-	background-color: rgb(40, 44, 52); /* 背景颜色为深蓝色 */
-	border: 1px solid rgb(44, 49, 58); /* 边框为深灰色 */
-}
-
-/* 设置左侧菜单背景的样式 */
-#leftMenuBg {
-	background-color: rgb(33, 37, 43); /* 背景颜色为深灰色 */
-}
-/* 设置顶部logo的样式 */
-#topLogo {
-	background-color: rgb(33, 37, 43); /* 背景颜色为深灰色 */
-	background-image: url(:/images/images/PyDracula.png); /* 背景图片为PyDracula图标 */
-	background-position: centered; /* 图片居中显示 */
-	background-repeat: no-repeat; /* 图片不重复 */
-}
-/* 设置左侧标题的样式 */
-#titleLeftApp { font: 63 12pt "Segoe UI Semibold"; } /* 字体为“Segoe UI Semibold”，字号为12点 */
-/* 设置左侧描述的样式 */
-#titleLeftDescription { font: 8pt "Segoe UI"; color: rgb(189, 147, 249); } /* 字体为“Segoe UI”，字号为8点，颜色为紫色 */
-
-/* 设置顶部菜单按钮的样式 */
-#topMenu .QPushButton {
-	background-position: left center; /* 背景图片左居中 */
-    background-repeat: no-repeat; /* 图片不重复 */
-	border: none; /* 去掉边框 */
-	border-left: 22px solid transparent; /* 左侧透明边框 */
-	background-color: transparent; /* 背景透明 */
-	text-align: left; /* 文本左对齐 */
-	padding-left: 44px; /* 内左边距为44像素 */
-}
-/* 设置顶部菜单按钮悬停状态的样式 */
-#topMenu .QPushButton:hover {
-	background-color: rgb(40, 44, 52); /* 背景颜色变为深蓝色 */
-}
-/* 设置顶部菜单按钮按压状态的样式 */
-#topMenu .QPushButton:pressed {
-	background-color: rgb(189, 147, 249); /* 背景颜色变为紫色 */
-	color: rgb(255, 255, 255); /* 文本颜色变为白色 */
-}
-/* 设置底部菜单按钮的样式 */
-#bottomMenu .QPushButton {
-	background-position: left center; /* 背景图片左居中 */
-    background-repeat: no-repeat; /* 图片不重复 */
-	border: none; /* 去掉边框 */
-	border-left: 20px solid transparent; /* 左侧透明边框 */
-	background-color:transparent; /* 背景透明 */
-	text-align: left; /* 文本左对齐 */
-	padding-left: 44px; /* 内左边距为44像素 */
-}
-/* 设置底部菜单按钮悬停状态的样式 */
-#bottomMenu .QPushButton:hover {
-	background-color: rgb(40, 44, 52); /* 背景颜色变为深蓝色 */
-}
-/* 设置底部菜单按钮按压状态的样式 */
-#bottomMenu .QPushButton:pressed {
-	background-color: rgb(189, 147, 249); /* 背景颜色变为紫色 */
-	color: rgb(255, 255, 255); /* 文本颜色变为白色 */
-}
-/* 设置左侧菜单框架的样式 */
-#leftMenuFrame{
-	border-top: 3px solid rgb(44, 49, 58); /* 上方边框为深灰色 */
-}
-
-/* 设置切换按钮的样式 */
-#toggleButton {
-	background-position: left center; /* 背景图片左居中 */
-    background-repeat: no-repeat; /* 图片不重复 */
-	border: none; /* 去掉边框 */
-	border-left: 20px solid transparent; /* 左侧透明边框 */
-	background-color: rgb(37, 41, 48); /* 背景颜色为更深的灰色 */
-	text-align: left; /* 文本左对齐 */
-	padding-left: 44px; /* 内左边距为44像素 */
-	color: rgb(113, 126, 149); /* 文本颜色为浅灰色 */
-}
-/* 设置切换按钮悬停状态的样式 */
-#toggleButton:hover {
-	background-color: rgb(40, 44, 52); /* 背景颜色变为深蓝色 */
-}
-/* 设置切换按钮按压状态的样式 */
-#toggleButton:pressed {
-	background-color: rgb(189, 147, 249); /* 背景颜色变为紫色 */
-}
-
-/* 设置右侧信息标题的样式 */
-#titleRightInfo { padding-left: 10px; } /* 内左边距为10像素 */
-
-/* 设置额外左侧盒子的样式 */
-#extraLeftBox {
-	background-color: rgb(44, 49, 58); /* 背景颜色为深灰色 */
-}
-/* 设置额外顶部背景的样式 */
-#extraTopBg{
-	background-color: rgb(189, 147, 249) /* 背景颜色为紫色 */
-}
-
-/* 设置额外图标的样式 */
-#extraIcon {
-	background-position: center; /* 图标居中 */
-	background-repeat: no-repeat; /* 图标不重复 */
-	background-image: url(:/icons/icons/icon_settings.png); /* 使用设置图标 */
-}
-
-/* 设置额外标签的样式 */
-#extraLabel { color: rgb(255, 255, 255); } /* 文本颜色为白色 */
-
-/* 设置额外关闭列按钮的样式 */
-#extraCloseColumnBtn { background-color: rgba(255, 255, 255, 0); border: none;  border-radius: 5px; } /* 背景透明，无边框，圆角半径为5像素 */
-/* 设置额外关闭列按钮悬停状态的样式 */
-#extraCloseColumnBtn:hover { background-color: rgb(196, 161, 249); border-style: solid; border-radius: 4px; } /* 背景颜色变为浅紫色，实线边框，圆角半径为4像素 */
-/* 设置额外关闭列按钮按压状态的样式 */
-#extraCloseColumnBtn:pressed { background-color: rgb(180, 141, 238); border-style: solid; border-radius: 4px; } /* 背景颜色变为更浅的紫色，实线边框，圆角半径为4像素 */
-
-/* 设置额外内容的样式 */
-#extraContent{
-	border-top: 3px solid rgb(40, 44, 52); /* 上方边框为深蓝色 */
-}
-
-/* 设置额外顶部菜单按钮的样式 */
-#extraTopMenu .QPushButton {
-background-position: left center; /* 背景图片左居中 */
-    background-repeat: no-repeat; /* 图片不重复 */
-	border: none; /* 去掉边框 */
-	border-left: 22px solid transparent; /* 左侧透明边框 */
-	background-color:transparent; /* 背景透明 */
-	text-align: left; /* 文本左对齐 */
-	padding-left: 44px; /* 内左边距为44像素 */
-}
-/* 设置额外顶部菜单按钮悬停状态的样式 */
-#extraTopMenu .QPushButton:hover {
-	background-color: rgb(40, 44, 52); /* 背景颜色变为深蓝色 */
-}
-/* 设置额外顶部菜单按钮按压状态的样式 */
-#extraTopMenu .QPushButton:pressed {
-	background-color: rgb(189, 147, 249); /* 背景颜色变为紫色 */
-	color: rgb(255, 255, 255); /* 文本颜色变为白色 */
-}
-
-/* 设置内容顶部背景的样式 */
-#contentTopBg{
-	background-color: rgb(33, 37, 43); /* 背景颜色为深灰色 */
-}
-/* 设置内容底部的样式 */
-#contentBottom{
-	border-top: 3px solid rgb(44, 49, 58); /* 上方边框为深灰色 */
-}
-
-/* 设置右侧按钮的样式 */
-#rightButtons .QPushButton { background-color: rgba(255, 255, 255, 0); border: none;  border-radius: 5px; } /* 背景透明，无边框，圆角半径为5像素 */
-/* 设置右侧按钮悬停状态的样式 */
-#rightButtons .QPushButton:hover { background-color: rgb(44, 49, 57); border-style: solid; border-radius: 4px; } /* 背景颜色变为深灰色，实线边框，圆角半径为4像素 */
-/* 设置右侧按钮按压状态的样式 */
-#rightButtons .QPushButton:pressed { background-color: rgb(23, 26, 30); border-style: solid; border-radius: 4px; } /* 背景颜色变为更深的灰色，实线边框，圆角半径为4像素 */
-
-/* 设置额外右侧盒子的样式 */
-#extraRightBox { background-color: rgb(44, 49, 58); } /* 背景颜色为深灰色 */
-/* 设置主题设置顶部详情的样式 */
-#themeSettingsTopDetail { background-color: rgb(189, 147, 249); } /* 背景颜色为紫色 */
-
-/* 设置底部栏的样式 */
-#bottomBar { background-color: rgb(44, 49, 58); } /* 背景颜色为深灰色 */
-/* 设置底部栏标签的样式 */
-#bottomBar QLabel { font-size: 11px; color: rgb(113, 126, 149); padding-left: 10px; padding-right: 10px; padding-bottom: 2px; } /* 字号为11点，颜色为浅灰色，内边距分别为10像素、10像素和2像素 */
-
-/* 设置内容设置按钮的样式 */
-#contentSettings .QPushButton {
-	background-position: left center; /* 背景图片左居中 */
-    background-repeat: no-repeat; /* 图片不重复 */
-	border: none; /* 去掉边框 */
-	border-left: 22px solid transparent; /* 左侧透明边框 */
-	background-color:transparent; /* 背景透明 */
-	text-align: left; /* 文本左对齐 */
-	padding-left: 44px; /* 内左边距为44像素 */
-}
-/* 设置内容设置按钮悬停状态的样式 */
-#contentSettings .QPushButton:hover {
-	background-color: rgb(40, 44, 52); /* 背景颜色变为深蓝色 */
-}
-/* 设置内容设置按钮按压状态的样式 */
-#contentSettings .QPushButton:pressed {
-	background-color: rgb(189, 147, 249); /* 背景颜色变为紫色 */
-	color: rgb(255, 255, 255); /* 文本颜色变为白色 */
-}
+```
+- 表格
+```qt style sheet
 
 /* 设置表格的样式 */
 QTableWidget {
@@ -246,6 +89,9 @@ QHeaderView::section:vertical
 {
     border: 1px solid rgb(44, 49, 60); /* 边框为深灰色 */
 }
+```
+- 输入框
+```qt style sheet
 
 /* 设置输入框的样式 */
 QLineEdit {
@@ -264,6 +110,9 @@ QLineEdit:hover {
 QLineEdit:focus {
 	border: 2px solid rgb(91, 101, 124); /* 边框颜色变为更深的灰色 */
 }
+```
+- 多行文本编辑器
+```qt style sheet
 
 /* 设置多行文本编辑器的样式 */
 QPlainTextEdit {
@@ -289,6 +138,9 @@ QPlainTextEdit:hover {
 QPlainTextEdit:focus {
 	border: 2px solid rgb(91, 101, 124); /* 边框颜色变为更深的灰色 */
 }
+```
+- 水平滚动条
+```qt style sheet
 
 /* 设置水平滚动条的样式 */
 QScrollBar:horizontal {
@@ -334,6 +186,9 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
 {
      background: none; /* 背景透明 */
 }
+```
+- 垂直滚动条
+```qt style sheet
 /* 设置垂直滚动条的样式 */
  QScrollBar:vertical {
 	border: none; /* 去掉边框 */
@@ -378,6 +233,10 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
      background: none; /* 背景透明 */
  }
 
+```
+- 复选框
+```qt style sheet
+
 /* 设置复选框指示器的样式 */
 QCheckBox::indicator {
     border: 3px solid rgb(52, 59, 72); /* 边框为深灰色 */
@@ -396,6 +255,9 @@ QCheckBox::indicator:checked {
 	border: 3px solid rgb(52, 59, 72); /* 边框颜色为深灰色 */
 	background-image: url(:/icons/icons/cil-check-alt.png); /* 使用勾选图标 */
 }
+```
+- 单选按钮
+```qt style sheet
 
 /* 设置单选按钮指示器的样式 */
 QRadioButton::indicator {
@@ -414,6 +276,5 @@ QRadioButton::indicator:checked {
     background: 3px solid rgb(189, 147, 249); /* 背景颜色为紫色 */
 	border: 3px solid rgb(52, 59, 72); /* 边框颜色为深灰色 */
 }
-
-
+```
 
