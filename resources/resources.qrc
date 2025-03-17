@@ -1,4 +1,8 @@
 <RCC>
+    <qresource prefix="/">
+        <file>themes/py_dracula_dark.qss</file>
+        <file>themes/py_dracula_light.qss</file>
+    </qresource>
     <qresource prefix="images">
         <file>images/PyDracula.png</file>
         <file>images/PyDracula_vertical.png</file>

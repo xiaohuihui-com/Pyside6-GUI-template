@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from PySide6.QtCore import (QObject, Qt)
+from PySide6.QtWidgets import QApplication
 
 from views import (MainWindow, LoginWindow)
 from ui.ui_components import (create_animation_group, create_opacity_animation)
@@ -31,6 +32,7 @@ class ViewMain(QObject):
             # 主窗口淡入，看个人喜好
             # self.fade_in = create_opacity_animation(self.main_window, 0, 1, 2500)
             # self.fade_in.start()
+
 
     def start_animation(self):
         # 确保第二个窗口的透明度初始为0
